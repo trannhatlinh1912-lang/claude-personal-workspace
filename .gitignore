@@ -16,3 +16,6 @@ serpapi.env
 # Temp files
 /tmp/
 fetch_reviews_*.py
+
+# Auto-generated session logs (local only)
+logs/*.md

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Secrets — không bao giờ commit
+*.env
+*.key
+*.pem
+serpapi.env
+
+# Temp files
+/tmp/
+fetch_reviews_*.py

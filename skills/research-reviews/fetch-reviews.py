@@ -80,12 +80,12 @@ def fetch_all_reviews(data_id: str, api_key: str):
             "engine": "google_maps_reviews",
             "data_id": data_id,
             "sort_by": "newestFirst",
-            "num": 20,
             "api_key": api_key,
             "hl": "vi",
         }
         if token:
             params["next_page_token"] = token
+            params["num"] = 20
         result = serpapi_get(params)
         if page == 0:
             place_info = result.get("place_info", {})

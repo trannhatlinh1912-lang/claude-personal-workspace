@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Stop hook: auto-log mỗi response vào ~/personal-workspace/logs/YYYY-MM-DD.md
+# Stop hook: auto-log mỗi response vào ~/.claude/personal-workspace/logs/YYYY-MM-DD.md
 # Triggered by Claude Code Stop event — luôn exit 0, không bao giờ block Claude
 
 set -euo pipefail

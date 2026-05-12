@@ -1,6 +1,6 @@
 ---
 name: github-sync
-description: Push tất cả outputs và logs từ ~/personal-workspace lên GitHub repo. Dùng khi muốn backup hoặc chia sẻ kết quả research và session logs.
+description: Push tất cả outputs và logs từ ~/.claude/personal-workspace lên GitHub repo. Dùng khi muốn backup hoặc chia sẻ kết quả research và session logs.
 ---
 
 # /github-sync — Push Workspace to GitHub
@@ -15,13 +15,13 @@ description: Push tất cả outputs và logs từ ~/personal-workspace lên Git
 
 ### Bước 1 — Kiểm tra trạng thái
 ```bash
-git -C ~/personal-workspace status --short
+git -C ~/.claude/personal-workspace status --short
 ```
 Nếu output rỗng: thông báo "Nothing to sync" và dừng.
 
 ### Bước 2 — Chạy sync script
 ```bash
-bash ~/personal-workspace/skills/github-sync/sync.sh "<commit_message>"
+bash ~/.claude/personal-workspace/skills/github-sync/sync.sh "<commit_message>"
 ```
 
 Nếu user không cung cấp commit message, script tự tạo: `sync: YYYY-MM-DD HH:MM — outputs and logs`

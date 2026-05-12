@@ -27,18 +27,18 @@ SERPAPI_KEY=your_actual_key_here
 
 ### Bước 2 — Chạy fetch script
 ```bash
-python3 ~/personal-workspace/skills/research-reviews/fetch-reviews.py "<URL>"
+python3 ~/.claude/personal-workspace/skills/research-reviews/fetch-reviews.py "<URL>"
 ```
 
 Script in JSON ra stdout, progress ra stderr. Lưu JSON output vào:
 ```
-~/personal-workspace/outputs/research-reviews/<YYYY-MM-DD>_<place_slug>.json
+~/.claude/personal-workspace/outputs/research-reviews/<YYYY-MM-DD>_<place_slug>.json
 ```
 
 ### Bước 3 — Phân tích và tạo báo cáo
 Đọc JSON vừa lưu và tạo báo cáo theo cấu trúc trong `report-template.md`. Lưu báo cáo vào:
 ```
-~/personal-workspace/outputs/research-reviews/<YYYY-MM-DD>_<place_slug>_report.md
+~/.claude/personal-workspace/outputs/research-reviews/<YYYY-MM-DD>_<place_slug>_report.md
 ```
 
 ### Bước 4 — Tổng kết

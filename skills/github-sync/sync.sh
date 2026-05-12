@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sync.sh — Push ~/personal-workspace lên GitHub
+# sync.sh — Push ~/.claude/personal-workspace lên GitHub
 # Usage: bash sync.sh ["optional commit message"]
 
 set -euo pipefail
